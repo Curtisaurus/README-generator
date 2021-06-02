@@ -28,13 +28,13 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Enter contribution guidelines:',
+        message: 'Enter contributors:',
         name: 'contribution',
     },
     {
         type: 'input',
         message: 'Enter test instructions',
-        name: 'test',
+        name: 'tests',
     },
     {
         type: 'list',

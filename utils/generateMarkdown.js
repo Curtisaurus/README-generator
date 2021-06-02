@@ -12,20 +12,46 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   let badge = renderLicenseBadge(data.license)
   return `# ${data.title}
+  ${badge}
 
-`;
+  Table of Contents |
+  ----------------- |
+  [Description](#description) |
+  [Installation](#installation) |
+  [Usage](#usage) |
+  [License](#license) |
+  [Contributing](#contributing) |
+  [Tests](#tests) |
+  [Questions](#questions) |
+
+  ## Description
+  ${data.description}
+
+  ## Installation
+  ${data.installation}
+
+  ## Usage
+  ${data.usage}
+
+  ## License
+  This application is licensed under ${data.license} open-source licensing.
+
+  ## Contributing
+  Contributors: ${data.contribution}
+
+  To contribute please contact us at the email below.  You may also fork this repository and create your own branch to test features.  If you are looking to contribute to our branch directly, please submit an issue or a pull request from a forked branch with detailed information as to suggested changes.  Thank you!
+
+  ## Tests
+  ${data.tests}
+
+  ## Questions
+  Check out my [GitHub profile](https://github.com/${data.username})
+  or contact me by email at:
+  [${data.email}](mailto:${data.email})`;
 }
 
 module.exports = generateMarkdown;
