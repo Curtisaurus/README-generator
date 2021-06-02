@@ -36,4 +36,6 @@
   or contact me by email at:
   [ccdrullinger@gmail.com](mailto:ccdrullinger@gmail.com)
 
-  *This README generated using the program*
+  *Everything above here generated using the program*
+
+  Check out a video of this in action [HERE](https://drive.google.com/file/d/1npDOvYll3KCOcrZlbzL3MS8lMZvm9va9/view)
