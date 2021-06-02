@@ -63,7 +63,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(data => {
-        const fileName = `${data.name.toLowerCase().split(' ').join('')}.md`;
+        const fileName = `${data.title.toLowerCase().split(' ').join('')}.md`;
         writeToFile(fileName, data);
     });
 }
